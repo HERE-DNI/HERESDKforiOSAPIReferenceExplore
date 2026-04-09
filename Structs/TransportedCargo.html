@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>ScooterSpecification Structure Reference</title>
+    <title>TransportedCargo Structure Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
     <link rel="stylesheet" type="text/css" href="../css/highlight.css">
     <meta charset="utf-8">
@@ -11,10 +11,10 @@
     <script src="../js/lunr.min.js" defer></script>
     <script src="../js/typeahead.jquery.js" defer></script>
     <script src="../js/jazzy.search.js" defer></script>
-  <meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for iOS Explore v4.25.5.0 API Reference"><meta name="DC.Document.Id" content="949f5880-e37a-4c95-92fd-1f3306cec85b"><meta name="DC.Document.Name" content="HERE SDK for iOS - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for iOS"><meta name="DC.Product.Version" content="4.25.5.0"><meta name="DC.Creation.Date" content="2026-03-28T07:52:41+00:00"></head>
+  <meta name="copyright" content="© 2025 HERE Europe B.V."><meta name="html_title" content="HERE SDK for iOS Explore v4.24.5.0 API Reference"><meta name="DC.Document.Id" content="0d53bec1-1eed-4110-8fe6-8ac4cef9da53"><meta name="DC.Document.Name" content="HERE SDK for iOS - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for iOS"><meta name="DC.Product.Version" content="4.24.5.0"><meta name="DC.Creation.Date" content="2025-11-27T12:30:47+00:00"></head>
   <body>
-    <a name="//apple_ref/swift/Struct/ScooterSpecification" class="dashAnchor"></a>
-    <a title="ScooterSpecification Structure Reference"></a>
+    <a name="//apple_ref/swift/Struct/TransportedCargo" class="dashAnchor"></a>
+    <a title="TransportedCargo Structure Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="../index.html">heresdk Docs</a> (99% documented)</p>
@@ -29,9 +29,9 @@
       <p id="breadcrumbs">
         <a href="../index.html">heresdk</a>
         <img id="carat" src="../img/carat.png" alt="">
-        <a href="../Transport.html">Transport</a>
+        <a href="../Routing.html">Routing</a>
         <img id="carat" src="../img/carat.png" alt="">
-        ScooterSpecification Structure Reference
+        TransportedCargo Structure Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -84,6 +84,12 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CountryCode.html">CountryCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CountryCode/Key.html">– Key</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/CountryCode/CodingError.html">– CodingError</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/CurrentType.html">CurrentType</a>
@@ -176,9 +182,6 @@
                 <a href="../Protocols/LocationDelegate.html">LocationDelegate</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/LocationSource.html">LocationSource</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/LocationTechnology.html">LocationTechnology</a>
               </li>
               <li class="nav-group-task">
@@ -210,6 +213,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ParameterConfiguration.html">ParameterConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/ParameterConfiguration/Pedestrian.html">– Pedestrian</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/PassThroughFeature.html">PassThroughFeature</a>
@@ -482,9 +488,6 @@
                 <a href="../Classes/MapCamera/State.html">– State</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/MapCamera/FarPlaneConfiguration.html">– FarPlaneConfiguration</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/MapCameraAnimation.html">MapCameraAnimation</a>
               </li>
               <li class="nav-group-task">
@@ -530,22 +533,10 @@
                 <a href="../Classes/MapContext.html">MapContext</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Classes/MapContext/MemoryManagementStrategy.html">– MemoryManagementStrategy</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/MapContext/MemoryManagementResultCode.html">– MemoryManagementResultCode</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Classes/MapContext/ResourceType.html">– ResourceType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/MapContext/FreeResourceSeverity.html">– FreeResourceSeverity</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/MapContext/MemoryManagementResult.html">– MemoryManagementResult</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/MapContext/MemoryManagementOptions.html">– MemoryManagementOptions</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/MapError.html">MapError</a>
@@ -630,18 +621,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/MapSceneLights/Direction.html">– Direction</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Maps.html#/s:7heresdk19MapSceneLoadOptionsC">MapSceneLoadOptions</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/MapSceneLoadOptionsBuilder.html">MapSceneLoadOptionsBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/MapSceneLoadOptionsBuilder/InstantiationErrorCode.html">– InstantiationErrorCode</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Classes/MapSceneLoadOptionsBuilder/InstantiationErrorDetails.html">– InstantiationErrorDetails</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/MapMarker.html">MapMarker</a>
@@ -973,12 +952,6 @@
                 <a href="../Enums/ChargingConnectorType.html">ChargingConnectorType</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Enums/ChargingConnectorType/Key.html">– Key</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/ChargingConnectorType/CodingError.html">– CodingError</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/ChargingStation.html">ChargingStation</a>
               </li>
               <li class="nav-group-task">
@@ -986,6 +959,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/ChargingSupplyType.html">ChargingSupplyType</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/CommonRouteOptions.html">CommonRouteOptions</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/DynamicSpeedInfo.html">DynamicSpeedInfo</a>
@@ -1016,12 +992,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/Fare.html">Fare</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/FarePassValidityPeriod.html">FarePassValidityPeriod</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Enums/FarePassValidityPeriodType.html">FarePassValidityPeriodType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/FarePrice.html">FarePrice</a>
@@ -1118,6 +1088,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/RoadTexts.html">RoadTexts</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/RoadType.html">RoadType</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/Route.html">Route</a>
@@ -1219,9 +1192,6 @@
                 <a href="../Structs/TollFare.html">TollFare</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/TollFarePass.html">TollFarePass</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Structs/TollOptions.html">TollOptions</a>
               </li>
               <li class="nav-group-task">
@@ -1282,6 +1252,9 @@
                 <a href="../Structs/TransitWaypoint.html">TransitWaypoint</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/TransportedCargo.html">TransportedCargo</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Enums/TravelDirection.html">TravelDirection</a>
               </li>
               <li class="nav-group-task">
@@ -1304,24 +1277,6 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/VehicleSpecification.html">VehicleSpecification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/VehicleSpecification/CarBuilder.html">– CarBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/VehicleSpecification/TruckBuilder.html">– TruckBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/VehicleSpecification/ScooterBuilder.html">– ScooterBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/VehicleSpecification/TaxiBuilder.html">– TaxiBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/VehicleSpecification/BusBuilder.html">– BusBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/VehicleSpecification/PrivateBusBuilder.html">– PrivateBusBuilder</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Structs/ViolatedRestriction.html">ViolatedRestriction</a>
@@ -1633,43 +1588,7 @@
                 <a href="../Structs/GeneralVehicleSpeedLimits.html">GeneralVehicleSpeedLimits</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/PedestrianSpecification.html">PedestrianSpecification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/ScooterSpecification.html">ScooterSpecification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/TaxiSpecification.html">TaxiSpecification</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/TransportMode.html">TransportMode</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/TransportSpecification.html">TransportSpecification</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/TransportSpecification/CarBuilder.html">– CarBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/TransportSpecification/TruckBuilder.html">– TruckBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/TransportSpecification/PedestrianBuilder.html">– PedestrianBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/TransportSpecification/ScooterBuilder.html">– ScooterBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/TransportSpecification/BicycleBuilder.html">– BicycleBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/TransportSpecification/TaxiBuilder.html">– TaxiBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/TransportSpecification/BusBuilder.html">– BusBuilder</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="../Structs/TransportSpecification/PrivateBusBuilder.html">– PrivateBusBuilder</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Enums/TruckCategory.html">TruckCategory</a>
@@ -1710,15 +1629,18 @@
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>ScooterSpecification</h1>
+            <h1>TransportedCargo</h1>
               <div class="declaration">
                 <div class="language">
                   
-                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ScooterSpecification</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">TransportedCargo</span> <span class="p">:</span> <span class="kt">Hashable</span></code></pre>
 
                 </div>
               </div>
-            <p>Scooter specific settings.</p>
+            <p>This struct defines the transported cargo and weight of the vehicle.</p>
+
+<p><strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
+Related APIs may change for new releases without a deprecation process.</p>
 
           </section>
           <section class="section task-group-section">
@@ -1727,9 +1649,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk20ScooterSpecificationV05allowB9OnHighwaySbvp"></a>
-                    <a name="//apple_ref/swift/Property/allowScooterOnHighway" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk20ScooterSpecificationV05allowB9OnHighwaySbvp">allowScooterOnHighway</a>
+                    <a name="/s:7heresdk16TransportedCargoV24currentWeightInKilogramss5Int32VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/currentWeightInKilograms" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk16TransportedCargoV24currentWeightInKilogramss5Int32VSgvp">currentWeightInKilograms</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1737,36 +1659,19 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Specifies whether scooter is allowed on highway or not. <code>True</code> means scooter is
-allowed to use highways and <code>false</code> means otherwise.
-Defaults to <code>false</code>.
-Note that there is a similar parameter in <code><a href="../Structs/AvoidanceOptions.html">AvoidanceOptions</a></code>, to disallow highway usage,
-see <code>RoadFeatures.CONTROLLED_ACCESS_HIGHWAY</code>.
-As the avoidance options takes precedence, if this parameter is also used, then
-scooters are not allowed to use highways even if <code>allowHighway</code> is set to <code>true</code>.
-However, if no alternative route is possible, the calculated route may use highways.
-In such a case, a <code><a href="../Structs/SectionNotice.html">SectionNotice</a></code> will be provided in the related <code><a href="../Classes/Section.html">Section</a></code> to indicate that
-the highway usage restriction is violated on this route.
-A few examples:</p>
+                        <p>The current weight in kilograms.</p>
 
-<p>1 - If no avoidance option is set, and <code>allowHighway = false</code>, when no route is found without
-highway usage, a notice is received.</p>
+<p>This parameter is used to provide a more accurate consumption prediction for electric vehicles.
+<code><a href="../Structs/TransportedCargo.html#/s:7heresdk16TransportedCargoV22grossWeightInKilogramss5Int32VSgvp">grossWeightInKilograms</a></code> is used for vehicle restrictions on the road.</p>
 
-<p>2 - If no avoidance option is set, and <code>allowHighway = true</code>, when no route is found without
-highway usage, no notice is received.</p>
-
-<p>3 - If only <code>avoid[features] = controlledAccessHighway</code> is set, when no route is found without
-highway usage, a notice is received.</p>
-
-<p>4 - If both <code>avoid[features] = controlledAccessHighway</code> and <code>allowHighway = true</code> are set,
-when no route is found without highway usage, a notice is received.</p>
+<p>The value is used to define the electrical vehicle consumption along the route.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">allowScooterOnHighway</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">currentWeightInKilograms</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -1776,9 +1681,187 @@ when no route is found without highway usage, a notice is received.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk20ScooterSpecificationV05allowB9OnHighwayACSb_tcfc"></a>
-                    <a name="//apple_ref/swift/Method/init(allowScooterOnHighway:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk20ScooterSpecificationV05allowB9OnHighwayACSb_tcfc">init(allowScooterOnHighway:<wbr>)</wbr></a>
+                    <a name="/s:7heresdk16TransportedCargoV22grossWeightInKilogramss5Int32VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/grossWeightInKilograms" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk16TransportedCargoV22grossWeightInKilogramss5Int32VSgvp">grossWeightInKilograms</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Truck weight including trailers and shipped goods in kilograms. The provided value
+must be greater than or equal to 0. By default, it is not set.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">grossWeightInKilograms</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk16TransportedCargoV24weightPerAxleInKilogramss5Int32VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/weightPerAxleInKilograms" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk16TransportedCargoV24weightPerAxleInKilogramss5Int32VSgvp">weightPerAxleInKilograms</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Heaviest weight per axle, regardless of axle type or axle group.
+It is evaluated against all axle weight restrictions, including single axle and tandem axle weight restrictions.
+The provided value must be greater or equal to 0.
+By default, it is not set.
+<strong>Note:</strong> <code>weight_per_axle_in_kilograms</code> and <code>weight_per_axle_group</code> are incompatible.
+When available for your edition, if both attributes are set, during online RoutingEngine an [sdk.routing.RoutingError.INVALID_PARAMETER] error is generated.
+Otherwise, when offline RoutingEngine is in place, both parameters are evaluated and the maximum value between them will be used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">weightPerAxleInKilograms</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk16TransportedCargoV18weightPerAxleGroupAA06WeightefG0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/weightPerAxleGroup" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk16TransportedCargoV18weightPerAxleGroupAA06WeightefG0VSgvp">weightPerAxleGroup</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows specification of axle weights in a more fine-grained way than <code>weight_per_axle_in_kilograms</code>.
+This is relevant in countries with signs and regulations that specify different limits for different axle groups, like the USA and Sweden.
+By default is not set.
+<strong>Note:</strong> <code>weight_per_axle_in_kilograms</code> and <code>weight_per_axle_group</code> are incompatible.
+When available for your edition, if both attributes are set, during online RoutingEngine an [sdk.routing.RoutingError.INVALID_PARAMETER] error is generated.
+Otherwise, when offline RoutingEngine is in place, both parameters are evaluated and the maximum value between them will be used.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">weightPerAxleGroup</span><span class="p">:</span> <span class="kt"><a href="../Structs/WeightPerAxleGroup.html">WeightPerAxleGroup</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk16TransportedCargoV18linkTunnelCategoryAA0eF0OSgvp"></a>
+                    <a name="//apple_ref/swift/Property/linkTunnelCategory" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk16TransportedCargoV18linkTunnelCategoryAA0eF0OSgvp">linkTunnelCategory</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the tunnel categories to restrict certain route links.
+The route will pass only through tunnels of a less strict category.
+Refer to <code><a href="../Enums/TunnelCategory.html">TunnelCategory</a></code> for the available options.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">linkTunnelCategory</span><span class="p">:</span> <span class="kt"><a href="../Enums/TunnelCategory.html">TunnelCategory</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk16TransportedCargoV18hazardousMaterialsSayAA17HazardousMaterialOGvp"></a>
+                    <a name="//apple_ref/swift/Property/hazardousMaterials" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk16TransportedCargoV18hazardousMaterialsSayAA17HazardousMaterialOGvp">hazardousMaterials</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies a list of hazardous materials shipped in the vehicle.
+Refer to <code><a href="../Enums/HazardousMaterial.html">HazardousMaterial</a></code> for the available options.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">hazardousMaterials</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HazardousMaterial.html">HazardousMaterial</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk16TransportedCargoV21avoidedTruckRoadTypesSayAA0eF4TypeOGvp"></a>
+                    <a name="//apple_ref/swift/Property/avoidedTruckRoadTypes" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk16TransportedCargoV21avoidedTruckRoadTypesSayAA0eF4TypeOGvp">avoidedTruckRoadTypes</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies a list of avoided truck road types for vehicle.
+Refer to <code><a href="../Enums/TruckRoadType.html">TruckRoadType</a></code> for the available options.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">avoidedTruckRoadTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/TruckRoadType.html">TruckRoadType</a></span><span class="p">]</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:7heresdk16TransportedCargoV24currentWeightInKilograms05grossefG0013weightPerAxlefG00ijK5Group18linkTunnelCategory18hazardousMaterials21avoidedTruckRoadTypesACs5Int32VSg_A2mA0ejkL0VSgAA0nO0OSgSayAA17HazardousMaterialOGSayAA0sT4TypeOGtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(currentWeightInKilograms:grossWeightInKilograms:weightPerAxleInKilograms:weightPerAxleGroup:linkTunnelCategory:hazardousMaterials:avoidedTruckRoadTypes:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk16TransportedCargoV24currentWeightInKilograms05grossefG0013weightPerAxlefG00ijK5Group18linkTunnelCategory18hazardousMaterials21avoidedTruckRoadTypesACs5Int32VSg_A2mA0ejkL0VSgAA0nO0OSgSayAA17HazardousMaterialOGSayAA0sT4TypeOGtcfc">init(currentWeightInKilograms:<wbr>grossWeightInKilograms:<wbr>weightPerAxleInKilograms:<wbr>weightPerAxleGroup:<wbr>linkTunnelCategory:<wbr>hazardousMaterials:<wbr>avoidedTruckRoadTypes:<wbr>)</wbr></wbr></wbr></wbr></wbr></wbr></wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1792,30 +1875,38 @@ when no route is found without highway usage, a notice is received.</p>
 <li><p>Parameters</p>
 
 <ul>
-<li>allowScooterOnHighway: Specifies whether scooter is allowed on highway or not. <code>True</code> means scooter is
-allowed to use highways and <code>false</code> means otherwise.
-Defaults to <code>false</code>.
-Note that there is a similar parameter in <code><a href="../Structs/AvoidanceOptions.html">AvoidanceOptions</a></code>, to disallow highway usage,
-see <code>RoadFeatures.CONTROLLED_ACCESS_HIGHWAY</code>.
-As the avoidance options takes precedence, if this parameter is also used, then
-scooters are not allowed to use highways even if <code>allowHighway</code> is set to <code>true</code>.
-However, if no alternative route is possible, the calculated route may use highways.
-In such a case, a <code><a href="../Structs/SectionNotice.html">SectionNotice</a></code> will be provided in the related <code><a href="../Classes/Section.html">Section</a></code> to indicate that
-the highway usage restriction is violated on this route.
-A few examples:</li>
+<li>currentWeightInKilograms: The current weight in kilograms.</li>
 </ul>
 
-<p>1 - If no avoidance option is set, and <code>allowHighway = false</code>, when no route is found without
-  highway usage, a notice is received.</p>
+<p>This parameter is used to provide a more accurate consumption prediction for electric vehicles.
+  <code><a href="../Structs/TransportedCargo.html#/s:7heresdk16TransportedCargoV22grossWeightInKilogramss5Int32VSgvp">grossWeightInKilograms</a></code> is used for vehicle restrictions on the road.</p>
 
-<p>2 - If no avoidance option is set, and <code>allowHighway = true</code>, when no route is found without
-  highway usage, no notice is received.</p>
+<p>The value is used to define the electrical vehicle consumption along the route.</p>
 
-<p>3 - If only <code>avoid[features] = controlledAccessHighway</code> is set, when no route is found without
-  highway usage, a notice is received.</p>
-
-<p>4 - If both <code>avoid[features] = controlledAccessHighway</code> and <code>allowHighway = true</code> are set,
-  when no route is found without highway usage, a notice is received.</p></li>
+<ul>
+<li>grossWeightInKilograms: Truck weight including trailers and shipped goods in kilograms. The provided value
+must be greater than or equal to 0. By default, it is not set.</li>
+<li>weightPerAxleInKilograms: Heaviest weight per axle, regardless of axle type or axle group.
+It is evaluated against all axle weight restrictions, including single axle and tandem axle weight restrictions.
+The provided value must be greater or equal to 0.
+By default, it is not set.
+<strong>Note:</strong> <code>weight_per_axle_in_kilograms</code> and <code>weight_per_axle_group</code> are incompatible.
+When available for your edition, if both attributes are set, during online RoutingEngine an [sdk.routing.RoutingError.INVALID_PARAMETER] error is generated.
+Otherwise, when offline RoutingEngine is in place, both parameters are evaluated and the maximum value between them will be used.</li>
+<li>weightPerAxleGroup: Allows specification of axle weights in a more fine-grained way than <code>weight_per_axle_in_kilograms</code>.
+This is relevant in countries with signs and regulations that specify different limits for different axle groups, like the USA and Sweden.
+By default is not set.
+<strong>Note:</strong> <code>weight_per_axle_in_kilograms</code> and <code>weight_per_axle_group</code> are incompatible.
+When available for your edition, if both attributes are set, during online RoutingEngine an [sdk.routing.RoutingError.INVALID_PARAMETER] error is generated.
+Otherwise, when offline RoutingEngine is in place, both parameters are evaluated and the maximum value between them will be used.</li>
+<li>linkTunnelCategory: Specifies the tunnel categories to restrict certain route links.
+The route will pass only through tunnels of a less strict category.
+Refer to <code><a href="../Enums/TunnelCategory.html">TunnelCategory</a></code> for the available options.</li>
+<li>hazardousMaterials: Specifies a list of hazardous materials shipped in the vehicle.
+Refer to <code><a href="../Enums/HazardousMaterial.html">HazardousMaterial</a></code> for the available options.</li>
+<li>avoidedTruckRoadTypes: Specifies a list of avoided truck road types for vehicle.
+Refer to <code><a href="../Enums/TruckRoadType.html">TruckRoadType</a></code> for the available options.</li>
+</ul></li>
 </ul>
 
                       </div>
@@ -1823,7 +1914,7 @@ A few examples:</li>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">allowScooterOnHighway</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">false</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">currentWeightInKilograms</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">grossWeightInKilograms</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">weightPerAxleInKilograms</span><span class="p">:</span> <span class="kt">Int32</span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">weightPerAxleGroup</span><span class="p">:</span> <span class="kt"><a href="../Structs/WeightPerAxleGroup.html">WeightPerAxleGroup</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">linkTunnelCategory</span><span class="p">:</span> <span class="kt"><a href="../Enums/TunnelCategory.html">TunnelCategory</a></span><span class="p">?</span> <span class="o">=</span> <span class="kc">nil</span><span class="p">,</span> <span class="nv">hazardousMaterials</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/HazardousMaterial.html">HazardousMaterial</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[],</span> <span class="nv">avoidedTruckRoadTypes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Enums/TruckRoadType.html">TruckRoadType</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[])</span></code></pre>
 
                         </div>
                       </div>
@@ -1835,7 +1926,7 @@ A few examples:</li>
           </section>
         </section>
         <section id="footer">
-          <p>© 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-03-25)</p>
+          <p>© 2025 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2025-11-24)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
