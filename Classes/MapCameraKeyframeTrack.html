@@ -59,6 +59,9 @@
                 <a href="../Core.html#/s:7heresdk31AuthenticationCompletionHandlera">AuthenticationCompletionHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/AuthenticationData.html">AuthenticationData</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Core.html#/s:7heresdk23AuthenticationExceptiona">AuthenticationException</a>
               </li>
               <li class="nav-group-task">
@@ -354,9 +357,6 @@
             <a href="../Positioning.html">Positioning</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/AuthenticationData.html">AuthenticationData</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/AuthenticationError.html">AuthenticationError</a>
               </li>
             </ul>
@@ -566,6 +566,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/MapContext/MemoryManagementResult.html">– MemoryManagementResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MapContext/SceneLoadCacheOptions.html">– SceneLoadCacheOptions</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/MapContext/MemoryManagementOptions.html">– MemoryManagementOptions</a>
@@ -1215,6 +1218,9 @@
                 <a href="../Structs/RouteStop.html">RouteStop</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/RouteTag.html">RouteTag</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/RouteTextOptions.html">RouteTextOptions</a>
               </li>
               <li class="nav-group-task">
@@ -1597,6 +1603,9 @@
                 <a href="../Structs/MobilePhone.html">MobilePhone</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/NearbyPlace.html">NearbyPlace</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/OpeningHours.html">OpeningHours</a>
               </li>
               <li class="nav-group-task">
@@ -1895,10 +1904,10 @@
             <a href="../Other%20Structs.html">Other Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/NearbyPlace.html">NearbyPlace</a>
+                <a href="../Structs/IndoorOriginalLocation.html">IndoorOriginalLocation</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/RouteTag.html">RouteTag</a>
+                <a href="../Structs/IndoorPassThroughWaypoint.html">IndoorPassThroughWaypoint</a>
               </li>
             </ul>
           </li>
@@ -2153,93 +2162,6 @@ and interpolation mode. Can only hold keyframes of a single type.</p>
                       <div>
                         <h4>Return Value</h4>
                         <p>a copy of the geo orientation keyframes or nothing if this is not a geo orientation keyframe track.</p>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk22MapCameraKeyframeTrackC14lookAtDistance9keyframes6easing17interpolationModeACSayAA06ScalarD0VG_AA6EasingCAA0d13InterpolationL0OtKFZ"></a>
-                    <a name="//apple_ref/swift/Method/lookAtDistance(keyframes:easing:interpolationMode:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk22MapCameraKeyframeTrackC14lookAtDistance9keyframes6easing17interpolationModeACSayAA06ScalarD0VG_AA6EasingCAA0d13InterpolationL0OtKFZ">lookAtDistance(keyframes:<wbr>easing:<wbr>interpolationMode:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Creates a map camera look-at distance keyframe track. It enables animations of the distance
-from the map camera to the target point that the camera looks at in meters. The values will
-be clamped according to the minimum and maximum zoom levels set for the map camera.</p>
-<div class="aside aside-throws">
-    <p class="aside-title">Throws</p>
-    <code><a href="../Classes/MapCameraKeyframeTrack.html#/s:7heresdk22MapCameraKeyframeTrackC18InstantiationErrora">MapCameraKeyframeTrack.InstantiationError</a></code> Indicates an instantiation issue.
-
-</div>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Will be removed in v4.27.0. Use `MapCameraKeyframeTrack.lookAtDistance(MapMeasure.Kind, [ScalarKeyframe], Easing, KeyframeInterpolationMode﹚` instead.")</span>
-<span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">lookAtDistance</span><span class="p">(</span><span class="nv">keyframes</span><span class="p">:</span> <span class="p">[</span><span class="kt"><a href="../Structs/ScalarKeyframe.html">ScalarKeyframe</a></span><span class="p">],</span> <span class="nv">easing</span><span class="p">:</span> <span class="kt"><a href="../Classes/Easing.html">Easing</a></span><span class="p">,</span> <span class="nv">interpolationMode</span><span class="p">:</span> <span class="kt"><a href="../Enums/KeyframeInterpolationMode.html">KeyframeInterpolationMode</a></span><span class="p">)</span> <span class="k">throws</span> <span class="o">-&gt;</span> <span class="kt">MapCameraKeyframeTrack</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>keyframes</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The list of keyframes that specify how the camera property is changed.
-Keyframe time offsets are considered to be relative to the previous keyframe
-in the list or relative to the start of the animation if the current keyframe
-is first in the list.
-Time offset of the first keyframe in the list should be 0, otherwise an error occurs
-and creation of the keyframe track will fail.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>easing</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The easing to apply during keyframe interpolation.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>interpolationMode</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The type of interpolation done between keyframe values.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
-                        <h4>Return Value</h4>
-                        <p>A keyframe track over the distance from the map camera to its target.</p>
                       </div>
                     </section>
                   </div>
@@ -2781,7 +2703,7 @@ and creation of the keyframe track will fail.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-06-23)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-07-03)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

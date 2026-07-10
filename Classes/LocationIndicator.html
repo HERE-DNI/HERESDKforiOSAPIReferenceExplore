@@ -59,6 +59,9 @@
                 <a href="../Core.html#/s:7heresdk31AuthenticationCompletionHandlera">AuthenticationCompletionHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/AuthenticationData.html">AuthenticationData</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Core.html#/s:7heresdk23AuthenticationExceptiona">AuthenticationException</a>
               </li>
               <li class="nav-group-task">
@@ -354,9 +357,6 @@
             <a href="../Positioning.html">Positioning</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/AuthenticationData.html">AuthenticationData</a>
-              </li>
-              <li class="nav-group-task">
                 <a href="../Enums/AuthenticationError.html">AuthenticationError</a>
               </li>
             </ul>
@@ -566,6 +566,9 @@
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/MapContext/MemoryManagementResult.html">– MemoryManagementResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/MapContext/SceneLoadCacheOptions.html">– SceneLoadCacheOptions</a>
               </li>
               <li class="nav-group-task">
                 <a href="../Classes/MapContext/MemoryManagementOptions.html">– MemoryManagementOptions</a>
@@ -1215,6 +1218,9 @@
                 <a href="../Structs/RouteStop.html">RouteStop</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/RouteTag.html">RouteTag</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/RouteTextOptions.html">RouteTextOptions</a>
               </li>
               <li class="nav-group-task">
@@ -1597,6 +1603,9 @@
                 <a href="../Structs/MobilePhone.html">MobilePhone</a>
               </li>
               <li class="nav-group-task">
+                <a href="../Structs/NearbyPlace.html">NearbyPlace</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="../Structs/OpeningHours.html">OpeningHours</a>
               </li>
               <li class="nav-group-task">
@@ -1895,10 +1904,10 @@
             <a href="../Other%20Structs.html">Other Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="../Structs/NearbyPlace.html">NearbyPlace</a>
+                <a href="../Structs/IndoorOriginalLocation.html">IndoorOriginalLocation</a>
               </li>
               <li class="nav-group-task">
-                <a href="../Structs/RouteTag.html">RouteTag</a>
+                <a href="../Structs/IndoorPassThroughWaypoint.html">IndoorPassThroughWaypoint</a>
               </li>
             </ul>
           </li>
@@ -1917,7 +1926,7 @@
 
                 </div>
               </div>
-            <p>Graphical object to represent the location of the user on the map.</p>
+            <p>A graphical object to represent the location of the user on the map.</p>
 
 <p>It is either a green dot for pedestrian style or a triangular arrow for vehicle navigation style.
 This style can be changed by <code><a href="../Classes/LocationIndicator.html#/s:7heresdk17LocationIndicatorC08locationC5StyleAC0cE0Ovp">LocationIndicator.locationIndicatorStyle</a></code></p>
@@ -1926,11 +1935,6 @@ This style can be changed by <code><a href="../Classes/LocationIndicator.html#/s
 <code>LocationIndicator.updateLocation(Location, MapCameraUpdate)</code>.</p>
 
 <p>Use <code><a href="../Classes/LocationIndicator.html#/s:7heresdk17LocationIndicatorC6enable3foryAA11MapViewBase_p_tF">LocationIndicator.enable(...)</a></code> to add this object to the map and <code><a href="../Classes/LocationIndicator.html#/s:7heresdk17LocationIndicatorC7disableyyF">LocationIndicator.disable(...)</a></code> to remove it.</p>
-
-<p>Note: The LocationIndicator is always rendered at a fixed altitude near 0. Changing the MapCamera
-to look at geographic coordinates with an altitude that is higher can cause the following behavior: If the
-MapCamera angle is tilted and altitude is too high, the LocationIndicator can unexpectedly
-disappear from the viewport due to the new perspective.</p>
 
           </section>
           <section class="section task-group-section">
@@ -2439,88 +2443,6 @@ determines the size of the accuracy indicator halo.</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk17LocationIndicatorC16setMarker3dModel_5scale4typeyAA16MapMarker3DModelC_SdAC10MarkerTypeOtF"></a>
-                    <a name="//apple_ref/swift/Method/setMarker3dModel(_:scale:type:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk17LocationIndicatorC16setMarker3dModel_5scale4typeyAA16MapMarker3DModelC_SdAC10MarkerTypeOtF">setMarker3dModel(_:<wbr>scale:<wbr>type:<wbr>)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Sets the MapMarker3DModel asset to be displayed as location indicator for a specified type.
-The 3D model should be oriented with y axis up and thus standing on the x/z plane where the
-z axis is the depth. The direction in which the location indicator is pointing is the
-positive z axis. Please note that only MapMarker3DModel created from *.obj files are
-supported. Models created from Mesh will be ignored.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available(*, deprecated, message: "Will be removed in v4.27.0. Please use the overloaded method with `RenderSize.Unit` instead.")</span>
-<span class="kd">public</span> <span class="kd">func</span> <span class="nf">setMarker3dModel</span><span class="p">(</span><span class="n">_</span> <span class="nv">model</span><span class="p">:</span> <span class="kt"><a href="../Classes/MapMarker3DModel.html">MapMarker3DModel</a></span><span class="p">,</span> <span class="nv">scale</span><span class="p">:</span> <span class="kt">Double</span><span class="p">,</span> <span class="nv">type</span><span class="p">:</span> <span class="kt">LocationIndicator</span><span class="o">.</span><span class="kt"><a href="../Classes/LocationIndicator/MarkerType.html">MarkerType</a></span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>model</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The MapMarker3DModel object to be displayed for the specified type. Only models
-created from obj files are supported. Those created from mesh will be ignored.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>scale</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The scaling which will be applied to the marker model. As the size of the
-location marker should be aligned on devices with different resolutions the
-scale factor is applied relative to the ppi value and thus differs from the
-scale which is passed to <code><a href="../Classes/MapMarker3D.html">MapMarker3D</a></code> objects.
-Meter is used for the unit of the map marker 3d model coordinate system.
-For historical reason, the scale factor is internally devided by 6.
-To display a unit qube of 1x1x1 meter as is, please use a scale value of 6.0.</p>
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>type</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>The type of location marker for which the marker 3d model should be replaced.</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/s:7heresdk17LocationIndicatorC16setMarker3dModel_5scale4type14renderSizeUnityAA16MapMarker3DModelC_SdAC10MarkerTypeOAA06RenderJ0V0K0OtF"></a>
                     <a name="//apple_ref/swift/Method/setMarker3dModel(_:scale:type:renderSizeUnit:)" class="dashAnchor"></a>
                     <a class="token" href="#/s:7heresdk17LocationIndicatorC16setMarker3dModel_5scale4type14renderSizeUnityAA16MapMarker3DModelC_SdAC10MarkerTypeOAA06RenderJ0V0K0OtF">setMarker3dModel(_:<wbr>scale:<wbr>type:<wbr>renderSizeUnit:<wbr>)</a>
@@ -2723,7 +2645,7 @@ The default color is a translucent turquoise (rgba(0, 199, 194, 76)) for all Ind
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-06-23)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-07-03)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

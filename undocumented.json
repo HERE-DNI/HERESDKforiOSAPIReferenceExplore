@@ -23,7 +23,7 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/harp.sdk-bindings/swift/unity/swift/harp.sdk-bindings_main_glue.swift",
-      "line": 17426,
+      "line": 17490,
       "symbol": "MapSceneLights.Direction.init(azimuth:altitude:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
@@ -51,14 +51,14 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_routing-common-bindings/swift/unity/swift/heresdk_routing-common-bindings_main_glue.swift",
-      "line": 5279,
+      "line": 5340,
       "symbol": "ChargingConnectorType.Key.rawValue",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/build/ios/os-arm64/generated/gluecodium/heresdk_routing-common-bindings/swift/unity/swift/heresdk_routing-common-bindings_main_glue.swift",
-      "line": 5284,
+      "line": 5345,
       "symbol": "ChargingConnectorType.CodingError.unknownValue",
       "symbol_kind": "source.lang.swift.decl.enumelement",
       "warning": "undocumented"
@@ -121,28 +121,28 @@
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/sdk/modules/mapview-harp/src/ios/swift/MapView.swift",
-      "line": 370,
+      "line": 814,
       "symbol": "MapView.init()",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/sdk/modules/mapview-harp/src/ios/swift/MapView.swift",
-      "line": 374,
+      "line": 818,
       "symbol": "MapView.init(frame:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/sdk/modules/mapview-harp/src/ios/swift/MapView.swift",
-      "line": 434,
+      "line": 878,
       "symbol": "MapView.init(frame:withSdkEngine:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
     },
     {
       "file": "/Users/bldadmin/gitlab-ci/builds/project/sdk/modules/mapview-harp/src/ios/swift/MapView.swift",
-      "line": 450,
+      "line": 895,
       "symbol": "MapView.init(coder:)",
       "symbol_kind": "source.lang.swift.decl.function.method.instance",
       "warning": "undocumented"
