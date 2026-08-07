@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>MaterialReflectivity Structure Reference</title>
-    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
-    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
-    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css">
+    <meta charset="utf-8">
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
     <script src="../js/lunr.min.js" defer></script>
     <script src="../js/typeahead.jquery.js" defer></script>
     <script src="../js/jazzy.search.js" defer></script>
-  </head>
+  <meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for iOS Explore v4.27.2.0 API Reference"><meta name="DC.Document.Id" content="c3bb4ee2-e4fc-47a1-9850-4c5e3369f298"><meta name="DC.Document.Name" content="HERE SDK for iOS - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for iOS"><meta name="DC.Product.Version" content="4.27.2.0"><meta name="DC.Creation.Date" content="2026-08-05T14:35:44+00:00"></head>
   <body>
     <a name="//apple_ref/swift/Struct/MaterialReflectivity" class="dashAnchor"></a>
     <a title="MaterialReflectivity Structure Reference"></a>
@@ -28,9 +28,9 @@
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">HERE SDK</a>
-        <img id="carat" src="../img/carat.png" alt=""/>
+        <img id="carat" src="../img/carat.png" alt="">
         <a href="../Maps.html">Maps</a>
-        <img id="carat" src="../img/carat.png" alt=""/>
+        <img id="carat" src="../img/carat.png" alt="">
         MaterialReflectivity Structure Reference
       </p>
     </div>
@@ -1930,14 +1930,14 @@
               </div>
             <p>Material reflectivity properties are used to enable per‑pixel lighting for supported map objects
 (e.g. <code><a href="../Classes/LocationIndicator.html">LocationIndicator</a></code> markers and their halo).</p>
-<h2 id='lighting-off-vs-on' class='heading'>Lighting OFF vs ON</h2>
+<h2 id="lighting-off-vs-on" class="heading">Lighting OFF vs ON</h2>
 
-<p>By default (when no MaterialReflectivity is assigned) objects are rendered &ldquo;unlit&rdquo; (emissive):
+<p>By default (when no MaterialReflectivity is assigned) objects are rendered “unlit” (emissive):
 their texture / color appears at a constant brightness, unaffected by scene lights. Assigning a
 <code>MaterialReflectivity</code> instance to an object that supports it (e.g. <code><a href="../Classes/LocationIndicator.html#/s:7heresdk17LocationIndicatorC20materialReflectivityAA08MaterialE0VSgvp">LocationIndicator.materialReflectivity</a></code>)
 automatically enables lighting for this object and all its internal components. Clearing (setting the property to
 <code>nil</code>) disables lighting again and restores the unlit appearance.</p>
-<h2 id='factors' class='heading'>Factors</h2>
+<h2 id="factors" class="heading">Factors</h2>
 
 <p>Both factors are expected to be within [0.0, 1.0]. Values outside this range are allowed but may
 produce exaggerated results or be clamped by future implementations. Typical useful ranges:</p>
@@ -1966,7 +1966,7 @@ produce exaggerated results or be clamped by future implementations. Typical use
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The ambient factor controls how much of the object&rsquo;s base color is treated as
+                        <p>The ambient factor controls how much of the object’s base color is treated as
 constant ambient contribution (independent of light direction) when lighting is enabled. Default value is 0.0.</p>
 
                       </div>
@@ -1994,7 +1994,7 @@ constant ambient contribution (independent of light direction) when lighting is 
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The diffuse factor controls how much of the object&rsquo;s color contributes to
+                        <p>The diffuse factor controls how much of the object’s color contributes to
 the diffuse lighting component when lighting is enabled. Default value is 1.0.</p>
 
                       </div>
@@ -2014,7 +2014,7 @@ the diffuse lighting component when lighting is enabled. Default value is 1.0.</
                     <code>
                     <a name="/s:7heresdk20MaterialReflectivityV13ambientFactor07diffuseE0ACSd_Sdtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(ambientFactor:diffuseFactor:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk20MaterialReflectivityV13ambientFactor07diffuseE0ACSd_Sdtcfc">init(ambientFactor:<wbr>diffuseFactor:<wbr>)</a>
+                    <a class="token" href="#/s:7heresdk20MaterialReflectivityV13ambientFactor07diffuseE0ACSd_Sdtcfc">init(ambientFactor:<wbr>diffuseFactor:<wbr>)</wbr></wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2041,7 +2041,7 @@ the diffuse lighting component when lighting is enabled. Default value is 1.0.</
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-04)</p>
+          <p>© 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

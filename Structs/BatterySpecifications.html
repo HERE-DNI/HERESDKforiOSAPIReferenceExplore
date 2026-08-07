@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>BatterySpecifications Structure Reference</title>
-    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
-    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
-    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css">
+    <meta charset="utf-8">
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
     <script src="../js/lunr.min.js" defer></script>
     <script src="../js/typeahead.jquery.js" defer></script>
     <script src="../js/jazzy.search.js" defer></script>
-  </head>
+  <meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for iOS Explore v4.27.2.0 API Reference"><meta name="DC.Document.Id" content="c3bb4ee2-e4fc-47a1-9850-4c5e3369f298"><meta name="DC.Document.Name" content="HERE SDK for iOS - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for iOS"><meta name="DC.Product.Version" content="4.27.2.0"><meta name="DC.Creation.Date" content="2026-08-05T14:35:44+00:00"></head>
   <body>
     <a name="//apple_ref/swift/Struct/BatterySpecifications" class="dashAnchor"></a>
     <a title="BatterySpecifications Structure Reference"></a>
@@ -28,9 +28,9 @@
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">HERE SDK</a>
-        <img id="carat" src="../img/carat.png" alt=""/>
+        <img id="carat" src="../img/carat.png" alt="">
         <a href="../Routing.html">Routing</a>
-        <img id="carat" src="../img/carat.png" alt=""/>
+        <img id="carat" src="../img/carat.png" alt="">
         BatterySpecifications Structure Reference
       </p>
     </div>
@@ -1928,7 +1928,7 @@
 
                 </div>
               </div>
-            <p>Parameters related to the electric vehicle&rsquo;s battery.</p>
+            <p>Parameters related to the electric vehicle’s battery.</p>
 
           </section>
           <section class="section task-group-section">
@@ -1947,7 +1947,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Total capacity of the vehicle&rsquo;s battery (in kWh).
+                        <p>Total capacity of the vehicle’s battery (in kWh).
 It must be positive.
 Defaults to 0.
 <strong>Note:</strong>
@@ -1979,7 +1979,7 @@ If not set greater than 0, the route calculation will fail as an invalid paramet
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Charge level of the vehicle&rsquo;s battery at the start of the route (in kWh).
+                        <p>Charge level of the vehicle’s battery at the start of the route (in kWh).
 It must be non-negative and less than or equal to the value of
 <code><a href="../Structs/BatterySpecifications.html#/s:7heresdk21BatterySpecificationsV28totalCapacityInKilowattHoursSdvp">BatterySpecifications.totalCapacityInKilowattHours</a></code>,
 otherwise the <code>BatterySpecifications</code> instance is considered invalid.
@@ -2211,7 +2211,7 @@ Defaults to 0.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Maximum charging voltage supported by the vehicle&rsquo;s battery in Volts.
+                        <p>Maximum charging voltage supported by the vehicle’s battery in Volts.
 It must be positive.
 When omitted, the voltage is determined by the charging station attributes.
 Defaults to <code>nil</code>.</p>
@@ -2241,7 +2241,7 @@ Defaults to <code>nil</code>.</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Maximum charging current supported by the vehicle&rsquo;s battery in Amperes.
+                        <p>Maximum charging current supported by the vehicle’s battery in Amperes.
 It must be positive.
 When omitted, the charging current is determined by the charging station attributes.
 Defaults to <code>nil</code>.</p>
@@ -2303,7 +2303,7 @@ Defaults to 0 seconds.</p>
                         <p>The maximum power in kilowatts at which a vehicle can charge under given these conditions:</p>
 
 <ul>
-<li>The charging station connector&rsquo;s maximum supply voltage is less than 800 V.</li>
+<li>The charging station connector’s maximum supply voltage is less than 800 V.</li>
 <li><code><a href="../Structs/BatterySpecifications.html#/s:7heresdk21BatterySpecificationsV25maxChargingVoltageInVoltsSdSgvp">BatterySpecifications.maxChargingVoltageInVolts</a></code> is greater than or equal to 800 V.
 The provided value must be greater than or equal to 0. By default, it is not set.
 <strong>Note:</strong> The feature is not supported by the <code>OfflineRoutingEngine</code>.</li>
@@ -2326,7 +2326,7 @@ The provided value must be greater than or equal to 0. By default, it is not set
                     <code>
                     <a name="/s:7heresdk21BatterySpecificationsV28totalCapacityInKilowattHours013initialChargefgH006targetjfgH013chargingCurve14connectorTypes03minj17AtChargingStationfgH00pjq5FirstrsfgH00pjq11DestinationfgH003maxr7VoltageF5Volts0vr7CurrentF7Amperes0L13SetupDuration0v5Powerq3LowwF9KilowattsACSd_S2dSDyS2dGSayAA0R13ConnectorTypeOGS2dSgSdA2TSdATtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(totalCapacityInKilowattHours:initialChargeInKilowattHours:targetChargeInKilowattHours:chargingCurve:connectorTypes:minChargeAtChargingStationInKilowattHours:minChargeAtFirstChargingStationInKilowattHours:minChargeAtDestinationInKilowattHours:maxChargingVoltageInVolts:maxChargingCurrentInAmperes:chargingSetupDuration:maxPowerAtLowVoltageInKilowatts:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk21BatterySpecificationsV28totalCapacityInKilowattHours013initialChargefgH006targetjfgH013chargingCurve14connectorTypes03minj17AtChargingStationfgH00pjq5FirstrsfgH00pjq11DestinationfgH003maxr7VoltageF5Volts0vr7CurrentF7Amperes0L13SetupDuration0v5Powerq3LowwF9KilowattsACSd_S2dSDyS2dGSayAA0R13ConnectorTypeOGS2dSgSdA2TSdATtcfc">init(totalCapacityInKilowattHours:<wbr>initialChargeInKilowattHours:<wbr>targetChargeInKilowattHours:<wbr>chargingCurve:<wbr>connectorTypes:<wbr>minChargeAtChargingStationInKilowattHours:<wbr>minChargeAtFirstChargingStationInKilowattHours:<wbr>minChargeAtDestinationInKilowattHours:<wbr>maxChargingVoltageInVolts:<wbr>maxChargingCurrentInAmperes:<wbr>chargingSetupDuration:<wbr>maxPowerAtLowVoltageInKilowatts:<wbr>)</a>
+                    <a class="token" href="#/s:7heresdk21BatterySpecificationsV28totalCapacityInKilowattHours013initialChargefgH006targetjfgH013chargingCurve14connectorTypes03minj17AtChargingStationfgH00pjq5FirstrsfgH00pjq11DestinationfgH003maxr7VoltageF5Volts0vr7CurrentF7Amperes0L13SetupDuration0v5Powerq3LowwF9KilowattsACSd_S2dSDyS2dGSayAA0R13ConnectorTypeOGS2dSgSdA2TSdATtcfc">init(totalCapacityInKilowattHours:<wbr>initialChargeInKilowattHours:<wbr>targetChargeInKilowattHours:<wbr>chargingCurve:<wbr>connectorTypes:<wbr>minChargeAtChargingStationInKilowattHours:<wbr>minChargeAtFirstChargingStationInKilowattHours:<wbr>minChargeAtDestinationInKilowattHours:<wbr>maxChargingVoltageInVolts:<wbr>maxChargingCurrentInAmperes:<wbr>chargingSetupDuration:<wbr>maxPowerAtLowVoltageInKilowatts:<wbr>)</wbr></wbr></wbr></wbr></wbr></wbr></wbr></wbr></wbr></wbr></wbr></wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2353,7 +2353,7 @@ The provided value must be greater than or equal to 0. By default, it is not set
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-04)</p>
+          <p>© 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

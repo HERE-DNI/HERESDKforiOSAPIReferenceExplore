@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>MapImageOverlay Class Reference</title>
-    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
-    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
-    <meta charset='utf-8'>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css">
+    <meta charset="utf-8">
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
     <script src="../js/lunr.min.js" defer></script>
     <script src="../js/typeahead.jquery.js" defer></script>
     <script src="../js/jazzy.search.js" defer></script>
-  </head>
+  <meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for iOS Explore v4.27.2.0 API Reference"><meta name="DC.Document.Id" content="c3bb4ee2-e4fc-47a1-9850-4c5e3369f298"><meta name="DC.Document.Name" content="HERE SDK for iOS - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for iOS"><meta name="DC.Product.Version" content="4.27.2.0"><meta name="DC.Creation.Date" content="2026-08-05T14:35:44+00:00"></head>
   <body>
     <a name="//apple_ref/swift/Class/MapImageOverlay" class="dashAnchor"></a>
     <a title="MapImageOverlay Class Reference"></a>
@@ -28,9 +28,9 @@
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">HERE SDK</a>
-        <img id="carat" src="../img/carat.png" alt=""/>
+        <img id="carat" src="../img/carat.png" alt="">
         <a href="../Maps.html">Maps</a>
-        <img id="carat" src="../img/carat.png" alt=""/>
+        <img id="carat" src="../img/carat.png" alt="">
         MapImageOverlay Class Reference
       </p>
     </div>
@@ -1935,7 +1935,7 @@
 <p>The image to be displayed is represented by a <code><a href="../Classes/MapImage.html">MapImage</a></code> object.
 By default, the overlay is centered on the given view coordinate.</p>
 
-<p>The resulting viewport area covered by the overlay is computed out of the overlay&rsquo;s view coordinate,
+<p>The resulting viewport area covered by the overlay is computed out of the overlay’s view coordinate,
 the anchor point and the image size. The overlay subareas that fall outside of the map viewport get clipped.</p>
 
 <p>To display the map overlay, it needs to be added to the scene using <code><a href="../Classes/MapScene.html#/s:7heresdk8MapSceneC03addB12ImageOverlayyyAA0beF0CF">MapScene.addMapImageOverlay(...)</a></code>.
@@ -1950,7 +1950,7 @@ To stop displaying it, remove it from the scene using <code><a href="../Classes/
                     <code>
                     <a name="/s:7heresdk15MapImageOverlayC2at5imageAcA7Point2DV_AA0bC0Ctcfc"></a>
                     <a name="//apple_ref/swift/Method/init(at:image:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk15MapImageOverlayC2at5imageAcA7Point2DV_AA0bC0Ctcfc">init(at:<wbr>image:<wbr>)</a>
+                    <a class="token" href="#/s:7heresdk15MapImageOverlayC2at5imageAcA7Point2DV_AA0bC0Ctcfc">init(at:<wbr>image:<wbr>)</wbr></wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1981,7 +1981,7 @@ To stop displaying it, remove it from the scene using <code><a href="../Classes/
                               </td>
                               <td>
                                 <div>
-                                  <p>The overlay&rsquo;s view coordinates in pixels.</p>
+                                  <p>The overlay’s view coordinates in pixels.</p>
                                 </div>
                               </td>
                             </tr>
@@ -2008,7 +2008,7 @@ To stop displaying it, remove it from the scene using <code><a href="../Classes/
                     <code>
                     <a name="/s:7heresdk15MapImageOverlayC2at5image6anchorAcA7Point2DV_AA0bC0CAA8Anchor2DVtcfc"></a>
                     <a name="//apple_ref/swift/Method/init(at:image:anchor:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk15MapImageOverlayC2at5image6anchorAcA7Point2DV_AA0bC0CAA8Anchor2DVtcfc">init(at:<wbr>image:<wbr>anchor:<wbr>)</a>
+                    <a class="token" href="#/s:7heresdk15MapImageOverlayC2at5image6anchorAcA7Point2DV_AA0bC0CAA8Anchor2DVtcfc">init(at:<wbr>image:<wbr>anchor:<wbr>)</wbr></wbr></wbr></a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2017,15 +2017,15 @@ To stop displaying it, remove it from the scene using <code><a href="../Classes/
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Creates an instance of an overlay at given view coordinates, represented by specified image,
-with anchor point specifying how the image is positioned relative to the overlay&rsquo;s view coordinates.</p>
+with anchor point specifying how the image is positioned relative to the overlay’s view coordinates.</p>
 
-<p>The anchor is a way of specifying position offset relative to image&rsquo;s dimensions on the view.
-For example, (0, 0) places the top-left corner of the image at the overlay&rsquo;s view coordinates.
-(1, 1) would place the bottom-right corner of the image at the overlay&rsquo;s view coordinates.
-(0.5, 0.5) which is the default value would center the image at the overlay&rsquo;s view coordinates.</p>
+<p>The anchor is a way of specifying position offset relative to image’s dimensions on the view.
+For example, (0, 0) places the top-left corner of the image at the overlay’s view coordinates.
+(1, 1) would place the bottom-right corner of the image at the overlay’s view coordinates.
+(0.5, 0.5) which is the default value would center the image at the overlay’s view coordinates.</p>
 
 <p>Values outside the 0..1 range are also allowed, for example (0.5, 2) would display the image
-centered horizontally with its bottom edge above the overlay&rsquo;s view coordinates at the distance
+centered horizontally with its bottom edge above the overlay’s view coordinates at the distance
 in pixels that is equal to the height of the image.</p>
 
                       </div>
@@ -2049,7 +2049,7 @@ in pixels that is equal to the height of the image.</p>
                               </td>
                               <td>
                                 <div>
-                                  <p>The overlay&rsquo;s view coordinates in pixels.</p>
+                                  <p>The overlay’s view coordinates in pixels.</p>
                                 </div>
                               </td>
                             </tr>
@@ -2074,7 +2074,7 @@ in pixels that is equal to the height of the image.</p>
                               <td>
                                 <div>
                                   <p>The anchor point for the overlay image which specifies the position offset relative
-to the overlay&rsquo;s view coordinates.</p>
+to the overlay’s view coordinates.</p>
                                 </div>
                               </td>
                             </tr>
@@ -2185,13 +2185,13 @@ then the order in which they were added to the scene matters. Last added overlay
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>The anchor point for the overlay image which specifies the position offset relative
-to the overlay&rsquo;s view coordinates.
-For example, (0, 0) places the top-left corner of the image at the overlay&rsquo;s view coordinates.
-(1, 1) would place the bottom-right corner of the image at the overlay&rsquo;s view coordinates.
-(0.5, 0.5) which is the default value would center the image at the overlay&rsquo;s view coordinates.</p>
+to the overlay’s view coordinates.
+For example, (0, 0) places the top-left corner of the image at the overlay’s view coordinates.
+(1, 1) would place the bottom-right corner of the image at the overlay’s view coordinates.
+(0.5, 0.5) which is the default value would center the image at the overlay’s view coordinates.</p>
 
 <p>Values outside the 0..1 range are also allowed, for example (0.5, 2) would display the image
-centered horizontally with its bottom edge above the overlay&rsquo;s view coordinates at the distance
+centered horizontally with its bottom edge above the overlay’s view coordinates at the distance
 in pixels that is equal to the height of the image.</p>
 
                       </div>
@@ -2211,7 +2211,7 @@ in pixels that is equal to the height of the image.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-04)</p>
+          <p>© 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-04)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
