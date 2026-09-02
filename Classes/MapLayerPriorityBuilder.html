@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <head>
     <title>MapLayerPriorityBuilder Class Reference</title>
-    <link rel="stylesheet" type="text/css" href="../css/jazzy.css">
-    <link rel="stylesheet" type="text/css" href="../css/highlight.css">
-    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
     <script src="../js/jquery.min.js" defer></script>
     <script src="../js/jazzy.js" defer></script>
     
     <script src="../js/lunr.min.js" defer></script>
     <script src="../js/typeahead.jquery.js" defer></script>
     <script src="../js/jazzy.search.js" defer></script>
-  <meta name="copyright" content="© 2026 HERE Europe B.V."><meta name="html_title" content="HERE SDK for iOS Explore v4.27.2.0 API Reference"><meta name="DC.Document.Id" content="c3bb4ee2-e4fc-47a1-9850-4c5e3369f298"><meta name="DC.Document.Name" content="HERE SDK for iOS - API Reference - Release"><meta name="DC.Product.Name" content="HERE SDK for iOS"><meta name="DC.Product.Version" content="4.27.2.0"><meta name="DC.Creation.Date" content="2026-08-05T14:35:44+00:00"></head>
+  </head>
   <body>
     <a name="//apple_ref/swift/Class/MapLayerPriorityBuilder" class="dashAnchor"></a>
     <a title="MapLayerPriorityBuilder Class Reference"></a>
@@ -28,9 +28,9 @@
     <div class="content-wrapper">
       <p id="breadcrumbs">
         <a href="../index.html">HERE SDK</a>
-        <img id="carat" src="../img/carat.png" alt="">
+        <img id="carat" src="../img/carat.png" alt=""/>
         <a href="../Maps.html">Maps</a>
-        <img id="carat" src="../img/carat.png" alt="">
+        <img id="carat" src="../img/carat.png" alt=""/>
         MapLayerPriorityBuilder Class Reference
       </p>
     </div>
@@ -1905,6 +1905,17 @@
             </ul>
           </li>
           <li class="nav-group-name">
+            <a href="../Other%20Classes.html">Other Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
             <a href="../Other%20Functions.html">Other Functions</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
@@ -1935,16 +1946,16 @@ and its categories, relative to other layers or layer-category pairs.</p>
 
 <p>Map layers are rendered in an order according to specified priorities. Rendering order of elements in
 a single map layer can be controlled with categories. Layer names are unique, and category names have
-to be unique within a layer. The layer’s default, main category is unnamed.</p>
+to be unique within a layer. The layer&rsquo;s default, main category is unnamed.</p>
 
-<p>The concept of ‘category’ is tightly linked to styling. The idea behind category is that
+<p>The concept of &lsquo;category&rsquo; is tightly linked to styling. The idea behind category is that
 one should be able to style separately elements in a map layer. Take, for instance, roads.
-If one wants to style separately the bridges it will create a category ‘bridges’ and style
+If one wants to style separately the bridges it will create a category &lsquo;bridges&rsquo; and style
 it accordingly in the style file. If the user does not intend to or cannot style elements
 of the layer diffenrently then it should opt for a layer with only the default category (e.g.
 raster layer).</p>
 
-<p>One way to define layers’ priorities is by using a layer priority list in the scene configuration.</p>
+<p>One way to define layers&rsquo; priorities is by using a layer priority list in the scene configuration.</p>
 
 <p>For example, a priority list in a scene configuration could define:</p>
 
@@ -1956,11 +1967,11 @@ raster layer).</p>
 <li>labels</li>
 </ul>
 
-<p>This means layer “background” is rendered first. Next up is layer “water”. Then category “outline” of
-layer “roads”, followed by the main category of layer “roads”. Layer “labels” is then rendered last.</p>
+<p>This means layer &ldquo;background&rdquo; is rendered first. Next up is layer &ldquo;water&rdquo;. Then category &ldquo;outline&rdquo; of
+layer &ldquo;roads&rdquo;, followed by the main category of layer &ldquo;roads&rdquo;. Layer &ldquo;labels&rdquo; is then rendered last.</p>
 
-<p></p><p>
-Now let’s consider a newly created layer ‘zone’ and its categories:</p>
+<p><p>
+Now let&rsquo;s consider a newly created layer &lsquo;zone&rsquo; and its categories:</p>
 
 <ul>
 <li>zone</li>
@@ -2011,17 +2022,17 @@ as a reference:</p>
 is going to be rendered last.</p>
 
 <p>Due to a current limitation for point map layers, the mentioned APIs to control the rendering
-order are not implemented. All labels will be rendered within the “labels” layer, defined in
+order are not implemented. All labels will be rendered within the &ldquo;labels&rdquo; layer, defined in
 the scene configuration file.
 By default, all labels rendered by a point map layer are rendered last and no overlapping is
 allowed. The following categories can be used to have a different behaviour:</p>
 
 <ul>
-<li>‘custom-labels’ A label should be rendered first, is allowed to overlap with other labels of
+<li>&lsquo;custom-labels&rsquo; A label should be rendered first, is allowed to overlap with other labels of
 the same category and block map labels.</li>
-<li>‘custom-labels-no-self-overlap’ A label should be rendered after ‘custom-labels’, is not allowed
+<li>&lsquo;custom-labels-no-self-overlap&rsquo; A label should be rendered after &lsquo;custom-labels&rsquo;, is not allowed
 to overlap with other labels of the same categoty and block map labels.</li>
-<li>‘custom-labels-overlap-all’ A label should be rendered last, is allowed to overlap all
+<li>&lsquo;custom-labels-overlap-all&rsquo; A label should be rendered last, is allowed to overlap all
 predefined categories, also map labels.
 These categories are configured accordingly in the basic map
 scene configurations.
@@ -2065,7 +2076,7 @@ assignment can be done for all types of data: points, lines, polygons.</li>
                     <code>
                     <a name="/s:7heresdk23MapLayerPriorityBuilderC12withCategoryyACSSF"></a>
                     <a name="//apple_ref/swift/Method/withCategory(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk23MapLayerPriorityBuilderC12withCategoryyACSSF">withCategory(_:<wbr>)</wbr></a>
+                    <a class="token" href="#/s:7heresdk23MapLayerPriorityBuilderC12withCategoryyACSSF">withCategory(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2118,7 +2129,7 @@ is cleared and the builder refers again to the layer itself.</p>
                     <code>
                     <a name="/s:7heresdk23MapLayerPriorityBuilderC7inGroupyACSSF"></a>
                     <a name="//apple_ref/swift/Method/inGroup(_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk23MapLayerPriorityBuilderC7inGroupyACSSF">inGroup(_:<wbr>)</wbr></a>
+                    <a class="token" href="#/s:7heresdk23MapLayerPriorityBuilderC7inGroupyACSSF">inGroup(_:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2129,7 +2140,7 @@ is cleared and the builder refers again to the layer itself.</p>
                         <p>Sets the group for which a priority could be defined with the next call to the functions
 <code>renderedFirst|Last|BeforeLayer|AfterLayer</code>.
 When a group is set, the next defined priority is relative to the layers and layer categories
-inside this group. The references (i.e. ‘referenceLayer’ and ‘referenceCategory’) of the priority
+inside this group. The references (i.e. &lsquo;referenceLayer&rsquo; and &lsquo;referenceCategory&rsquo;) of the priority
 are only searched inside the group.
 Only one group or no group can be defined per layer priority and layer category priority, however,
 different layers can set priorities for the same group.
@@ -2196,11 +2207,11 @@ Notice that the order of calls to the functions
 matters, and that after such a call the builder clears the current category and refers again to
 the layer itself. Further, only one priority for each layer and layer category should be set
 with these functions since previous priorities would be ingored. For example the priority to
-render layer category ‘C’ after layer ‘L’ would be overridden by the priority to
-render layer category ‘C’ before layer ‘L’ when building something like</p>
+render layer category &lsquo;C&rsquo; after layer &lsquo;L&rsquo; would be overridden by the priority to
+render layer category &lsquo;C&rsquo; before layer &lsquo;L&rsquo; when building something like</p>
 
-<p>withCategory(“C”).renderedAfterLayer(“L”).withCategory(“C”).renderedBeforeLayer(“L”)
-<code>withCategory(named: "C").renderedAfterLayer(named: "L").withCategory(named: "C").renderedBeforeLayer(named: "L")</code>
+<p>withCategory(&ldquo;C&rdquo;).renderedAfterLayer(&ldquo;L&rdquo;).withCategory(&ldquo;C&rdquo;).renderedBeforeLayer(&ldquo;L&rdquo;)
+<code>withCategory(named: &quot;C&quot;).renderedAfterLayer(named: &quot;L&quot;).withCategory(named: &quot;C&quot;).renderedBeforeLayer(named: &quot;L&quot;)</code>
 The previously defined and prioritised categories can be used as reference.</p>
 
                       </div>
@@ -2239,11 +2250,11 @@ Notice that the order of calls to the functions
 matters, and that after such a call the builder clears the current category and refers again to
 the layer itself. Further, only one priority for each layer and layer category should be set
 with these functions since previous priorities would be ingored. For example the priority to
-render layer category ‘C’ after layer ‘L’ would be overridden by the priority to
-render layer category ‘C’ before layer ‘L’ when building something like</p>
+render layer category &lsquo;C&rsquo; after layer &lsquo;L&rsquo; would be overridden by the priority to
+render layer category &lsquo;C&rsquo; before layer &lsquo;L&rsquo; when building something like</p>
 
-<p>withCategory(“C”).renderedAfterLayer(“L”).withCategory(“C”).renderedBeforeLayer(“L”)
-<code>withCategory(named: "C").renderedAfterLayer(named: "L").withCategory(named: "C").renderedBeforeLayer(named: "L")</code>
+<p>withCategory(&ldquo;C&rdquo;).renderedAfterLayer(&ldquo;L&rdquo;).withCategory(&ldquo;C&rdquo;).renderedBeforeLayer(&ldquo;L&rdquo;)
+<code>withCategory(named: &quot;C&quot;).renderedAfterLayer(named: &quot;L&quot;).withCategory(named: &quot;C&quot;).renderedBeforeLayer(named: &quot;L&quot;)</code>
 The previously defined and prioritised categories can be used as reference.</p>
 
                       </div>
@@ -2267,7 +2278,7 @@ The previously defined and prioritised categories can be used as reference.</p>
                     <code>
                     <a name="/s:7heresdk23MapLayerPriorityBuilderC014renderedBeforeC05namedACSS_tF"></a>
                     <a name="//apple_ref/swift/Method/renderedBeforeLayer(named:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk23MapLayerPriorityBuilderC014renderedBeforeC05namedACSS_tF">renderedBeforeLayer(named:<wbr>)</wbr></a>
+                    <a class="token" href="#/s:7heresdk23MapLayerPriorityBuilderC014renderedBeforeC05namedACSS_tF">renderedBeforeLayer(named:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2283,11 +2294,11 @@ Notice that the order of calls to the functions
 matters, and that after such a call the builder clears the current category and refers again to
 the layer itself. Further, only one priority for each layer and layer category should be set
 with these functions since previous priorities would be ingored. For example the priority to
-render layer category ‘C’ after layer ‘L’ would be overridden by the priority to
-render layer category ‘C’ before layer ‘L’ when building something like</p>
+render layer category &lsquo;C&rsquo; after layer &lsquo;L&rsquo; would be overridden by the priority to
+render layer category &lsquo;C&rsquo; before layer &lsquo;L&rsquo; when building something like</p>
 
-<p>withCategory(“C”).renderedAfterLayer(“L”).withCategory(“C”).renderedBeforeLayer(“L”)
-<code>withCategory(named: "C").renderedAfterLayer(named: "L").withCategory(named: "C").renderedBeforeLayer(named: "L")</code>
+<p>withCategory(&ldquo;C&rdquo;).renderedAfterLayer(&ldquo;L&rdquo;).withCategory(&ldquo;C&rdquo;).renderedBeforeLayer(&ldquo;L&rdquo;)
+<code>withCategory(named: &quot;C&quot;).renderedAfterLayer(named: &quot;L&quot;).withCategory(named: &quot;C&quot;).renderedBeforeLayer(named: &quot;L&quot;)</code>
 The previously defined and prioritised categories can be used as reference.
 If the referenceLayer does not exist, then the function will set the priority as rendered
 before all layers and categories.</p>
@@ -2332,7 +2343,7 @@ before all layers and categories.</p>
                     <code>
                     <a name="/s:7heresdk23MapLayerPriorityBuilderC014renderedBeforeC05named12categoryNameACSS_SStF"></a>
                     <a name="//apple_ref/swift/Method/renderedBeforeLayer(named:categoryName:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk23MapLayerPriorityBuilderC014renderedBeforeC05named12categoryNameACSS_SStF">renderedBeforeLayer(named:<wbr>categoryName:<wbr>)</wbr></wbr></a>
+                    <a class="token" href="#/s:7heresdk23MapLayerPriorityBuilderC014renderedBeforeC05named12categoryNameACSS_SStF">renderedBeforeLayer(named:<wbr>categoryName:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2348,11 +2359,11 @@ Notice that the order of calls to the functions
 matters, and that after such a call the builder clears the current category and refers again to
 the layer itself. Further, only one priority for each layer and layer category should be set
 with these functions since previous priorities would be ingored. For example the priority to
-render layer category ‘C’ after layer ‘L’ would be overridden by the priority to
-render layer category ‘C’ before layer ‘L’ when building something like</p>
+render layer category &lsquo;C&rsquo; after layer &lsquo;L&rsquo; would be overridden by the priority to
+render layer category &lsquo;C&rsquo; before layer &lsquo;L&rsquo; when building something like</p>
 
-<p>withCategory(“C”).renderedAfterLayer(“L”).withCategory(“C”).renderedBeforeLayer(“L”)
-<code>withCategory(named: "C").renderedAfterLayer(named: "L").withCategory(named: "C").renderedBeforeLayer(named: "L")</code>
+<p>withCategory(&ldquo;C&rdquo;).renderedAfterLayer(&ldquo;L&rdquo;).withCategory(&ldquo;C&rdquo;).renderedBeforeLayer(&ldquo;L&rdquo;)
+<code>withCategory(named: &quot;C&quot;).renderedAfterLayer(named: &quot;L&quot;).withCategory(named: &quot;C&quot;).renderedBeforeLayer(named: &quot;L&quot;)</code>
 The previously defined and prioritised categories can be used as reference.
 If the referenceLayer and/or the referenceCategory do not exist, then the function will set
 the priority as rendered before all layers and categories.</p>
@@ -2409,7 +2420,7 @@ the priority as rendered before all layers and categories.</p>
                     <code>
                     <a name="/s:7heresdk23MapLayerPriorityBuilderC013renderedAfterC05namedACSS_tF"></a>
                     <a name="//apple_ref/swift/Method/renderedAfterLayer(named:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk23MapLayerPriorityBuilderC013renderedAfterC05namedACSS_tF">renderedAfterLayer(named:<wbr>)</wbr></a>
+                    <a class="token" href="#/s:7heresdk23MapLayerPriorityBuilderC013renderedAfterC05namedACSS_tF">renderedAfterLayer(named:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2425,11 +2436,11 @@ Notice that the order of calls to the functions
 matters, and that after such a call the builder clears the current category and refers again to
 the layer itself. Further, only one priority for each layer and layer category should be set
 with these functions since previous priorities would be ingored. For example the priority to
-render layer category ‘C’ after layer ‘L’ would be overridden by the priority to
-render layer category ‘C’ before layer ‘L’ when building something like</p>
+render layer category &lsquo;C&rsquo; after layer &lsquo;L&rsquo; would be overridden by the priority to
+render layer category &lsquo;C&rsquo; before layer &lsquo;L&rsquo; when building something like</p>
 
-<p>withCategory(“C”).renderedAfterLayer(“L”).withCategory(“C”).renderedBeforeLayer(“L”)
-<code>withCategory(named: "C").renderedAfterLayer(named: "L").withCategory(named: "C").renderedBeforeLayer(named: "L")</code>
+<p>withCategory(&ldquo;C&rdquo;).renderedAfterLayer(&ldquo;L&rdquo;).withCategory(&ldquo;C&rdquo;).renderedBeforeLayer(&ldquo;L&rdquo;)
+<code>withCategory(named: &quot;C&quot;).renderedAfterLayer(named: &quot;L&quot;).withCategory(named: &quot;C&quot;).renderedBeforeLayer(named: &quot;L&quot;)</code>
 The previously defined and prioritised categories can be used as reference.
 If the referenceLayer does not exist, then the function will set the priority as rendered
 after all layers and categories.</p>
@@ -2474,7 +2485,7 @@ after all layers and categories.</p>
                     <code>
                     <a name="/s:7heresdk23MapLayerPriorityBuilderC013renderedAfterC05named12categoryNameACSS_SStF"></a>
                     <a name="//apple_ref/swift/Method/renderedAfterLayer(named:categoryName:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk23MapLayerPriorityBuilderC013renderedAfterC05named12categoryNameACSS_SStF">renderedAfterLayer(named:<wbr>categoryName:<wbr>)</wbr></wbr></a>
+                    <a class="token" href="#/s:7heresdk23MapLayerPriorityBuilderC013renderedAfterC05named12categoryNameACSS_SStF">renderedAfterLayer(named:<wbr>categoryName:<wbr>)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -2490,11 +2501,11 @@ Notice that the order of calls to the functions
 matters, and that after such a call the builder clears the current category and refers again to
 the layer itself. Further, only one priority for each layer and layer category should be set
 with these functions since previous priorities would be ingored. For example the priority to
-render layer category ‘C’ after layer ‘L’ would be overridden by the priority to
-render layer category ‘C’ before layer ‘L’ when building something like</p>
+render layer category &lsquo;C&rsquo; after layer &lsquo;L&rsquo; would be overridden by the priority to
+render layer category &lsquo;C&rsquo; before layer &lsquo;L&rsquo; when building something like</p>
 
-<p>withCategory(“C”).renderedAfterLayer(“L”).withCategory(“C”).renderedBeforeLayer(“L”)
-<code>withCategory(named: "C").renderedAfterLayer(named: "L").withCategory(named: "C").renderedBeforeLayer(named: "L")</code>
+<p>withCategory(&ldquo;C&rdquo;).renderedAfterLayer(&ldquo;L&rdquo;).withCategory(&ldquo;C&rdquo;).renderedBeforeLayer(&ldquo;L&rdquo;)
+<code>withCategory(named: &quot;C&quot;).renderedAfterLayer(named: &quot;L&quot;).withCategory(named: &quot;C&quot;).renderedBeforeLayer(named: &quot;L&quot;)</code>
 The previously defined and prioritised categories can be used as reference.
 If the referenceLayer and/or the referenceCategory do not exist, then the function will set
 the priority as rendered after all layers and categories.</p>
@@ -2583,7 +2594,7 @@ MapLayerPriority.</p>
           </section>
         </section>
         <section id="footer">
-          <p>© 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-04)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
