@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Other Classes  Reference</title>
+    <title>Other Enumerations  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -13,8 +13,8 @@
     <script src="js/jazzy.search.js" defer></script>
   </head>
   <body>
-    <a name="//apple_ref/swift/Section/Other Classes" class="dashAnchor"></a>
-    <a title="Other Classes  Reference"></a>
+    <a name="//apple_ref/swift/Section/Other Enumerations" class="dashAnchor"></a>
+    <a title="Other Enumerations  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html">HERE SDK for iOS (Explore) - API Reference</a></p>
@@ -29,7 +29,7 @@
       <p id="breadcrumbs">
         <a href="index.html">HERE SDK</a>
         <img id="carat" src="img/carat.png" alt=""/>
-        Other Classes  Reference
+        Other Enumerations  Reference
       </p>
     </div>
     <div class="content-wrapper">
@@ -839,6 +839,15 @@
                 <a href="Protocols/PolygonTileSourceLoadResultHandler.html">PolygonTileSourceLoadResultHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="Maps.html#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PositionIndicatorMeshRepresentationBuilder.html">PositionIndicatorMeshRepresentationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/QuadMeshBuilder.html">QuadMeshBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1646,10 +1655,16 @@
                 <a href="Structs/PlaceIdQuery.html">PlaceIdQuery</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/PlaceIdResult.html">PlaceIdResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Search.html#/s:7heresdk30PlaceIdSearchCompletionHandlera">PlaceIdSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="Search.html#/s:7heresdk38PlaceIdSearchExtendedCompletionHandlera">PlaceIdSearchExtendedCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/PlaceSerializationError.html">PlaceSerializationError</a>
@@ -1903,13 +1918,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Other%20Classes.html">Other Classes</a>
+            <a href="Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                <a href="Enums/RoutingEngineSource.html">RoutingEngineSource</a>
               </li>
             </ul>
           </li>
@@ -1924,13 +1936,21 @@
               </li>
             </ul>
           </li>
+          <li class="nav-group-name">
+            <a href="Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/StreetInfo.html">StreetInfo</a>
+              </li>
+            </ul>
+          </li>
         </ul>
       </nav>
       <article class="main-content">
         <section>
           <section class="section">
-            <h1>Other Classes</h1>
-            <p>The following classes are available globally.</p>
+            <h1>Other Enumerations</h1>
+            <p>The following enumerations are available globally.</p>
 
           </section>
           <section class="section task-group-section">
@@ -1939,9 +1959,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:7heresdk35PositionIndicatorMeshRepresentationC"></a>
-                    <a name="//apple_ref/swift/Class/PositionIndicatorMeshRepresentation" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+                    <a name="/s:7heresdk19RoutingEngineSourceO"></a>
+                    <a name="//apple_ref/swift/Enum/RoutingEngineSource" class="dashAnchor"></a>
+                    <a class="token" href="#/s:7heresdk19RoutingEngineSourceO">RoutingEngineSource</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1949,46 +1969,18 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Mesh-based visual representation of a PositionIndicator: geometry, texture, color and lighting.
-Attach it to a PositionIndicator via setRepresentation.</p>
+                        <p>Identifies the routing engine that created a <code><a href="Structs/RouteHandle.html">RouteHandle</a></code>.</p>
 
-                        <a href="Classes/PositionIndicatorMeshRepresentation.html" class="slightly-smaller">See more</a>
+<p>A route handle can only be consumed by the routing engine that created it.
+See <code><a href="Structs/RouteHandle.html#/s:7heresdk11RouteHandleV6sourceAA19RoutingEngineSourceOSgvp">RouteHandle.source</a></code>.</p>
+
+                        <a href="Enums/RoutingEngineSource.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PositionIndicatorMeshRepresentation</span> <span class="p">:</span> <span class="kt"><a href="Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:7heresdk31PositionIndicatorRepresentationC"></a>
-                    <a name="//apple_ref/swift/Class/PositionIndicatorRepresentation" class="dashAnchor"></a>
-                    <a class="token" href="#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Base class for visual representations of a PositionIndicator.
-Use PositionIndicatorMeshRepresentation for mesh-based rendering.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PositionIndicatorRepresentation</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">PositionIndicatorRepresentation</span><span class="p">:</span> <span class="kt">NativeBase</span></code></pre>
-<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">PositionIndicatorRepresentation</span><span class="p">:</span> <span class="kt">Hashable</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">RoutingEngineSource</span> <span class="p">:</span> <span class="kt">UInt32</span><span class="p">,</span> <span class="kt">CaseIterable</span><span class="p">,</span> <span class="kt">Codable</span></code></pre>
 
                         </div>
                       </div>
@@ -2000,7 +1992,7 @@ Use PositionIndicatorMeshRepresentation for mesh-based rendering.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>

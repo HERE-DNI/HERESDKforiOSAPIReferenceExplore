@@ -839,6 +839,15 @@
                 <a href="Protocols/PolygonTileSourceLoadResultHandler.html">PolygonTileSourceLoadResultHandler</a>
               </li>
               <li class="nav-group-task">
+                <a href="Maps.html#/s:7heresdk35PositionIndicatorMeshRepresentationC">PositionIndicatorMeshRepresentation</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Classes/PositionIndicatorMeshRepresentationBuilder.html">PositionIndicatorMeshRepresentationBuilder</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Maps.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Classes/QuadMeshBuilder.html">QuadMeshBuilder</a>
               </li>
               <li class="nav-group-task">
@@ -1646,10 +1655,16 @@
                 <a href="Structs/PlaceIdQuery.html">PlaceIdQuery</a>
               </li>
               <li class="nav-group-task">
+                <a href="Structs/PlaceIdResult.html">PlaceIdResult</a>
+              </li>
+              <li class="nav-group-task">
                 <a href="Search.html#/s:7heresdk30PlaceIdSearchCompletionHandlera">PlaceIdSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="Search.html#/s:7heresdk38PlaceIdSearchExtendedCompletionHandlera">PlaceIdSearchExtendedCompletionHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="Search.html#/s:7heresdk31PlaceIdsSearchCompletionHandlera">PlaceIdsSearchCompletionHandler</a>
               </li>
               <li class="nav-group-task">
                 <a href="Enums/PlaceSerializationError.html">PlaceSerializationError</a>
@@ -1903,13 +1918,10 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a href="Other%20Classes.html">Other Classes</a>
+            <a href="Other%20Enums.html">Other Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a href="Classes/PositionIndicatorMeshRepresentation.html">PositionIndicatorMeshRepresentation</a>
-              </li>
-              <li class="nav-group-task">
-                <a href="Other%20Classes.html#/s:7heresdk31PositionIndicatorRepresentationC">PositionIndicatorRepresentation</a>
+                <a href="Enums/RoutingEngineSource.html">RoutingEngineSource</a>
               </li>
             </ul>
           </li>
@@ -1921,6 +1933,14 @@
               </li>
               <li class="nav-group-task">
                 <a href="Other%20Functions.html#/s:7heresdk12synchronized_7closurexyp_xyXEtlF">synchronized(_:closure:)</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="Other%20Structs.html">Other Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Structs/StreetInfo.html">StreetInfo</a>
               </li>
             </ul>
           </li>
@@ -2742,9 +2762,7 @@ and efficient energy estimates suitable for routing, range prediction, and navig
 <p>Parameters specific to the electric vehicle are used to calculate energy consumption on a given route.
 At minimum, you must provide <code><a href="Structs/EmpiricalConsumptionModel.html#/s:7heresdk25EmpiricalConsumptionModelV06ascentC19InWattHoursPerMeterSdvp">EmpiricalConsumptionModel.ascentConsumptionInWattHoursPerMeter</a></code>,
 <code><a href="Structs/EmpiricalConsumptionModel.html#/s:7heresdk25EmpiricalConsumptionModelV34descentRecoveryInWattHoursPerMeterSdvp">EmpiricalConsumptionModel.descentRecoveryInWattHoursPerMeter</a></code> and a
-<code><a href="Structs/EmpiricalConsumptionModel.html#/s:7heresdk25EmpiricalConsumptionModelV18freeFlowSpeedTableSDys5Int32VSdGvp">EmpiricalConsumptionModel.freeFlowSpeedTable</a></code>.
-<strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
-Related APIs may change for new releases without a deprecation process.</p>
+<code><a href="Structs/EmpiricalConsumptionModel.html#/s:7heresdk25EmpiricalConsumptionModelV18freeFlowSpeedTableSDys5Int32VSdGvp">EmpiricalConsumptionModel.freeFlowSpeedTable</a></code>.</p>
 
                         <a href="Structs/EmpiricalConsumptionModel.html" class="slightly-smaller">See more</a>
                       </div>
@@ -4048,9 +4066,7 @@ and it is therefore considered to provide a better traveler experience.</p>
                       <div class="abstract">
                         <p>Defines the physical consumption model for electric vehicles,
 using vehicle-specific parameters to calculate energy consumption along a route.
-<strong>Note:</strong> [sdk.transport.VehicleSpecification.current_weight_in_kilograms] must be set.
-<strong>Note:</strong> This is a beta release of this feature, so there could be a few bugs and unexpected behaviors.
-Related APIs may change for new releases without a deprecation process.</p>
+<strong>Note:</strong> [sdk.transport.VehicleSpecification.current_weight_in_kilograms] must be set.</p>
 
                         <a href="Structs/PhysicalConsumptionModel.html" class="slightly-smaller">See more</a>
                       </div>
@@ -4388,7 +4404,8 @@ Note that the <code><a href="Classes/Route.html#/s:7heresdk5RouteC11routeHandleA
 if <code><a href="Structs/RouteOptions.html#/s:7heresdk12RouteOptionsV06enableB6HandleSbvp">RouteOptions.enableRouteHandle</a></code> is set before route calculation.
 A <code>RouteHandle</code> generated by the online <code><a href="Classes/RoutingEngine.html">RoutingEngine</a></code> is not compatible with the <code>OfflineRoutingEngine</code>.
 Similarly, a <code>RouteHandle</code> from the <code>OfflineRoutingEngine</code> cannot be used with the online <code><a href="Classes/RoutingEngine.html">RoutingEngine</a></code>.
-Using an incompatible <code>RouteHandle</code> results in a <code><a href="Enums/RoutingError.html">RoutingError</a></code>.</p>
+Using an incompatible <code>RouteHandle</code> results in a
+<code><a href="Enums/RoutingError.html#/s:7heresdk12RoutingErrorO23incompatibleRouteHandleyA2CmF">RoutingError.incompatibleRouteHandle</a></code>. See <code><a href="Structs/RouteHandle.html#/s:7heresdk11RouteHandleV6sourceAA19RoutingEngineSourceOSgvp">RouteHandle.source</a></code>.</p>
 
                         <a href="Structs/RouteHandle.html" class="slightly-smaller">See more</a>
                       </div>
@@ -6321,7 +6338,7 @@ route.</p>
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-08-31)</p>
+          <p>&copy; 2026 <a class="link" href="" target="_blank" rel="external noopener"></a>. All rights reserved. (Last updated: 2026-09-28)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external noopener">jazzy ♪♫ v0.15.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external noopener">Realm</a> project.</p>
         </section>
       </article>
